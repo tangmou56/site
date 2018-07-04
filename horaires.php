@@ -28,7 +28,7 @@
 		<div class="textposition">
 
                 <?php
-                $requete="SELECT * FROM JeuxLudothèque";
+                $requete="SELECT * FROM person";
 
                 $Serveur="localhost";
                 $Utilisateur="root";
@@ -53,7 +53,7 @@
 
                     echo '<tr>';
                     echo '<th>'.$r[0].'</th>';
-                    echo '<th>'.$r[2].'</th>';
+                    echo '<th>'.$r[1].'</th>';
 
           }
         ?>
