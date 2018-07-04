@@ -30,7 +30,7 @@
                 <?php
                 $requete="SELECT * FROM person";
 
-                $Serveur="localhost";
+                $Serveur="localhost:3306";
                 $Utilisateur="root";
                 $MotDePasse="1";
 
