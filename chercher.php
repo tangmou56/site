@@ -31,40 +31,40 @@
 <div class="textposition">
 
 <table class="info"><caption>RESULTAT DE RECHERCHE</caption><tr class="info"><th>Nom du jeux</th><th>Joueur(Maximale)</th><th>Age(Minimale)</th><th>Type</th></tr><tr>
-    
+
 <?php
     $joueur=$_POST["joueur"];
     $age=$_POST["age"];
     $type=$_POST["type"];
     if($type=="in"){$type="Intérieur";}
     else{$type="Extérieur";}
-    
-$requete="SELECT * FROM VR_grp10_Jeux";
 
-$Serveur="info.univ-lemans.fr";
-$Utilisateur="info201a_user";
-$MotDePasse="com72";
+		$requete="SELECT * FROM VR_grp10_Jeux";
 
-$LienBase=mysql_connect($Serveur,$Utilisateur,$MotDePasse);
+		$Serveur="localhost";
+		$Utilisateur="root";
+		$MotDePasse="1";
 
-$retour=mysql_select_db("info201a",$LienBase);
+		$LienBase=mysql_connect($Serveur,$Utilisateur,$MotDePasse);
 
-if(!$retour){
-echo "impossible de connecter";}
+		$retour=mysql_select_db("test",$LienBase);
 
-$Reponse = mysql_query($requete,$LienBase);
+		if(!$retour){
+		echo "impossible de connecter";}
+
+		$Reponse = mysql_query($requete,$LienBase);
 
 
-while($r=mysql_fetch_array($Reponse)){
-    if($age>=$r[2]&&$joueur<=$r[1]&&$type==$r[3]){
-    echo '<tr>';
-    echo '<th>'.$r[0].'</th>';
-    echo '<th>'.$r[1].'</th>';
-    echo '<th>'.$r[2].'</th>';
-    echo '<th>'.$r[3].'</th>';
-    echo '</tr>';
-    }
-}
+		while($r=mysql_fetch_array($Reponse)){
+		    if($age>=$r[2]&&$joueur<=$r[1]&&$type==$r[3]){
+		    echo '<tr>';
+		    echo '<th>'.$r[0].'</th>';
+		    echo '<th>'.$r[1].'</th>';
+		    echo '<th>'.$r[2].'</th>';
+		    echo '<th>'.$r[3].'</th>';
+		    echo '</tr>';
+		    }
+		}
 
 
 
@@ -73,9 +73,9 @@ while($r=mysql_fetch_array($Reponse)){
 
 
 ?>
-    
+
     </table>
-    
+
 
 </div>
 
@@ -85,7 +85,3 @@ while($r=mysql_fetch_array($Reponse)){
 </body>
 
 </html>
-
-
-
-
