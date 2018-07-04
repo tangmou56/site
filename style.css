@@ -1,0 +1,146 @@
+.title{
+    background-color:#ECF0F1;
+}
+
+
+
+
+img.tex{
+    height: 100%;
+    width:100%;
+	object-fit: cover;
+	margin:1% auto;
+    border:solid;
+    border-color:white;
+	
+	
+} 
+
+.textposition{
+	position:relative;
+	width: 95%;
+	top:20px;
+	
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.lien{
+	background-color:#ECF0F1;
+	color:#E74C3C;
+
+}
+
+table.info{
+	border-color: DarkGrey ;
+	border-style: dashed;
+	border-collapse:collapse;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+th,td{
+	border:thin solid black;
+	padding:10px;
+	text-align:center;
+	color:#2980B9;
+}
+tr.info{
+    background-color: black;
+}
+a:hover {background-color:#FF704D;}
+a:active {background-color:#FF704D;}
+a:link {text-decoration:none;color:#2980B9;}
+a:visited {text-decoration:none;color:#2980B9;}
+
+.inlinetile{
+    position:relative;
+    right:-80%;
+    width:100px;
+	color:#E74C3C;
+} 
+
+.inlinenom{ 
+    margin-left: 10%;
+    margin-right: auto;
+    width:430px;
+
+	color: #3498DB;
+	font-family: Arial, Helvetica, sans-serif;
+} 
+
+.text{
+    color:#2980B9;
+
+	position:relative;
+    margin-left: auto;
+    margin-right: auto;
+	top:30px;
+	font-family: Helvetica;
+	font-size:20px;
+
+	width:60%; 
+	height:25%;
+	background-color:#ECF0F1;
+}
+
+.textinfo{
+	color:#2980B9;
+    
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    top:30px;
+	font-family: Helvetica;
+	font-size:20px;
+
+	width:80%; 
+	height:100%;
+	background-color:#ECF0F1;
+}
+
+.textho{
+	color:#2980B9;
+    
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    top:30px;
+
+	width:45%; 
+	height:120%;
+	background-color:#ECF0F1;
+}
+
+
+.textimg{
+    position:relative;
+    height: 160px
+
+	
+}
+
+body{
+    margin-left:10%;
+    margin-right:10%;
+	background-color:#2C3E50    ;
+	
+}
+
+.center{
+    width: 50%;
+        margin-left: auto;
+    margin-right: auto;
+}
+.titretable{
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    font-size: 30px;   
+    color:#E74C3C;
+}
