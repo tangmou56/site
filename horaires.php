@@ -28,6 +28,42 @@
 		<div class="textposition">
 
                 <?php
+                  $servername = "118.126.111.171";
+                  $port=3306;
+                  $username = "root";
+                  $password = "111";
+                  $dbname = "test";
+                  $socket="mysqli.default_socket";
+
+                  // Create connection
+                  $conn = new mysqli($servername, $username, $password, $dbname,$port,$socket);
+                  // Check connection
+                  if ($conn->connect_error) {
+                    die("Connection failed: " . $conn->connect_error);
+                  }
+
+                  $sql = "SELECT * FROM person";
+                  $result = $conn->query($sql);
+
+                  if ($result->num_rows > 0) {
+                    // output data of each row
+                    while($row = $result->fetch_assoc()) {
+                        echo "id: " . $row[0]. " - Name: " . $row[1]. "<br>";
+                    }
+                  } else {
+                    echo "0 results";
+                  }
+                  $conn->close();
+
+
+
+
+
+
+
+
+
+
                   echo "连接:";
                   $requete="SELECT * FROM person";
 
