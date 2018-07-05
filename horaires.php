@@ -33,7 +33,7 @@
 
                   $Serveur="localhost";
                   $Utilisateur="root";
-                  $MotDePasse="55665566";
+                  $MotDePasse="1";
 
                   $LienBase=mysql_connect($Serveur,$Utilisateur,$MotDePasse);
 
