@@ -31,7 +31,7 @@
                   echo "连接:";
                   $requete="SELECT * FROM person";
 
-                  $Serveur="118.126.111.171:3306";
+                  $Serveur="localhost";
                   $Utilisateur="root";
                   $MotDePasse="55665566";
 
