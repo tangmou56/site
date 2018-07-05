@@ -40,7 +40,7 @@
                   $retour=mysql_select_db("test",$LienBase);
 
                   if(!$retour){
-                    echo("连接失败: " ;}
+                    echo "连接失败: " ;}
                   else{
                     echo "连接成功";
                   }
