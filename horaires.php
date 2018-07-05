@@ -31,7 +31,7 @@
                   $servername = "118.126.111.171";
                   $port=3306;
                   $username = "root";
-                  $password = "111";
+                  $password = "1";
                   $dbname = "test";
                   $socket="mysqli.default_socket";
 
