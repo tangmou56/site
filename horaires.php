@@ -40,9 +40,11 @@
                   $retour=mysql_select_db("test",$LienBase);
 
                   if(!$retour){
-                    die("连接失败: " . mysqli_connect_error();}
-                  echo "连接成功";
-                  $Reponse = mysql_query($requete,$LienBase);
+                    echo("连接失败: " . mysqli_connect_error();}
+                  else{
+                    echo "连接成功";
+                  }
+                $Reponse = mysql_query($requete,$LienBase);
 
 
               ?>
