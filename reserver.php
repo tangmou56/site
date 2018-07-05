@@ -23,4 +23,4 @@
 
 
     ?></p>
-<font size="10" color="red">It's done</font>
+<font size="50" color="red">It's done</font>
