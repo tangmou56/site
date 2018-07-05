@@ -44,6 +44,8 @@
                   else{
                     echo "连接成功";
                   }
+                  echo "连接完";
+
                 $Reponse = mysql_query($requete,$LienBase);
 
 
