@@ -31,9 +31,9 @@
                   echo "连接:";
                   $requete="SELECT * FROM person";
 
-                  $Serveur="localhost";
+                  $Serveur="118.126.111.171";
                   $Utilisateur="root";
-                  $MotDePasse="1";
+                  $MotDePasse="111";
 
                   $LienBase=mysql_connect($Serveur,$Utilisateur,$MotDePasse);
 
