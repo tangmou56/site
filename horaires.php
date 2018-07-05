@@ -48,7 +48,7 @@
                   if ($result->num_rows > 0) {
                     // output data of each row
                     while($row = $result->fetch_assoc()) {
-                        echo "id: " . $row[0]. " - Name: " . $row[1]. "<br>";
+                        echo "id: " . $row["id_person"]. " - Name: " . $row["name"]. "<br>";
                     }
                   } else {
                     echo "0 results";
