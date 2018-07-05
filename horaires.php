@@ -67,7 +67,7 @@
 
 
 
-		        Votre nom : <input name="nom"><br/><br/>
+		        Your name : <input name="nom"><br/><br/>
                 <br/><br/>
 		        <input type="submit" value="Réserver" name = "valider" />
 		 </form>
