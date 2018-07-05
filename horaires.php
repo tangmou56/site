@@ -26,7 +26,7 @@
 		</div>
 		<div class="textho">
 		<div class="textposition">
-<table class="info"><caption>Horaires</caption><tr class="info"><th>Nom du jeux</th><th>Nombre dispositif</th></tr>
+    <table class="info"><caption>Horaires</caption><tr class="info"><th>Nombre</th><th>Name</th></tr>
                 <?php
                   $servername = "118.126.111.171";
                   $port=3306;
@@ -57,52 +57,23 @@
                     echo "0 results";
                   }
 
-
-
-
                   $conn->close();
-
-
-
-
-
-
 
               ?>
 		</table>
 		<br/>
             <h3>Réaliser votre réservation :</h3>
-            <form class="center"  method="post" action="reserver.php">
+      <form class="center"  method="post" action="reserver.php">
 
-            Date de réservation : <input name="date" placeholder="1970-01-01"/> <br /> <br />
-            <select name="jeux">
-                <?php
-                 $requete="SELECT * FROM Jeux";
-                 $Reponse = mysql_query($requete,$LienBase);
 
-                 while($r=mysql_fetch_array($Reponse)){
-                    echo "<option value='".$r[0]."'>".$r[0]."</option>";
-                 }
-                ?>
-                </select>
+
+		        Votre nom : <input name="nom"><br/><br/>
                 <br/><br/>
-
-		Votre nom : <input name="nom"><br/><br/>
-        Votre adress-mail : <input name="mail">
-                <br/><br/>
-		<input type="submit" value="Réserver" name = "valider" />
-		</form>
+		        <input type="submit" value="Réserver" name = "valider" />
+		 </form>
 
 
-            <h3>Chercher votre réservation :</h3>
-        <form class="center"  method="post" action="horcher.php">
 
-
-		Votre nom : <input name="nomc"><br/><br/>
-        Votre adress-mail : <input name="mailc">
-                <br/><br/>
-		<input type="submit" value="Chercher" name = "valider" />
-		</form>
 
 
 		</div>
