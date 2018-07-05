@@ -14,12 +14,13 @@
     if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
     }
-    
 
-    $sql = "INSERT INTO `person` VALUES('"DEFAULT"', '".$nom."');";
+
+    $sql = "INSERT INTO `person` VALUES(DEFAULT, '".$nom."');";
     $result = $conn->query($sql);
 
 
 
 
     ?></p>
+<h3>It's done</h3>
