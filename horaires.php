@@ -28,20 +28,21 @@
 		<div class="textposition">
 
                 <?php
-                $requete="SELECT * FROM person";
+                  echo "连接:";
+                  $requete="SELECT * FROM person";
 
-                $Serveur="118.126.111.171:3306";
-                $Utilisateur="root";
-                $MotDePasse="1";
+                  $Serveur="118.126.111.171:3306";
+                  $Utilisateur="root";
+                  $MotDePasse="55665566";
 
-                $LienBase=mysql_connect($Serveur,$Utilisateur,$MotDePasse);
+                  $LienBase=mysql_connect($Serveur,$Utilisateur,$MotDePasse);
 
-                $retour=mysql_select_db("test",$LienBase);
+                  $retour=mysql_select_db("test",$LienBase);
 
-                if(!$retour){
-                    echo "impossible de connecter";}
-
-                $Reponse = mysql_query($requete,$LienBase);
+                  if(!$retour){
+                    die("连接失败: " . mysqli_connect_error();}
+                  echo "连接成功";
+                  $Reponse = mysql_query($requete,$LienBase);
 
 
               ?>
