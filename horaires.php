@@ -26,7 +26,7 @@
 		</div>
 		<div class="textho">
 		<div class="textposition">
-
+<table class="info"><caption>Horaires</caption><tr class="info"><th>Nom du jeux</th><th>Nombre dispositif</th></tr>
                 <?php
                   $servername = "118.126.111.171";
                   $port=3306;
@@ -48,11 +48,18 @@
                   if ($result->num_rows > 0) {
                     // output data of each row
                     while($row = $result->fetch_assoc()) {
-                        echo "id: " . $row["id_person"]. " - Name: " . $row["name"]. "<br>";
+                      echo '<tr>';
+                      echo '<th>'.$row["id_person"].'</th>';
+                      echo '<th>'.$row["name"].'</th>';
+
                     }
                   } else {
                     echo "0 results";
                   }
+
+
+
+
                   $conn->close();
 
 
@@ -61,43 +68,7 @@
 
 
 
-
-
-
-                  echo "连接:";
-                  $requete="SELECT * FROM person";
-
-                  $Serveur="118.126.111.171";
-                  $Utilisateur="root";
-                  $MotDePasse="111";
-
-                  $LienBase=mysql_connect($Serveur,$Utilisateur,$MotDePasse);
-
-                  $retour=mysql_select_db("test",$LienBase);
-
-                  if(!$retour){
-                    echo "连接失败: " ;}
-                  else{
-                    echo "连接成功";
-                  }
-                  echo "连接完";
-
-                $Reponse = mysql_query($requete,$LienBase);
-
-
               ?>
-
-
-			<table class="info"><caption>Horaires</caption><tr class="info"><th>Nom du jeux</th><th>Nombre dispositif</th></tr>
-	<?php
-        while($r=mysql_fetch_array($Reponse)){
-
-                    echo '<tr>';
-                    echo '<th>'.$r[0].'</th>';
-                    echo '<th>'.$r[1].'</th>';
-
-          }
-        ?>
 		</table>
 		<br/>
             <h3>Réaliser votre réservation :</h3>
